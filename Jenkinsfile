@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
-            steps {
-                git 'https://github.com/shayansid1702/Shayan_Jenkins'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean install'
